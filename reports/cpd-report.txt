@@ -1,0 +1,425 @@
+Found a 36 line (208 tokens) duplication in the following files: 
+Starting at line 95 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 96 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+	public adminface() throws SQLException {
+		connection=DriverManager.getConnection("jdbc:mysql://localhost/user","root","1234");
+		initialize2();
+		
+	}
+	
+	public void initialize2(){
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 788, 415);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btntickets = new JButton("Show tickets");
+		btntickets.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				try{
+				String query="select * from tickets";
+				PreparedStatement pst=connection.prepareStatement(query);
+				ResultSet rs =pst.executeQuery();
+				table.setModel(DbUtils.resultSetToTableModel(rs));
+				pst.close();
+				rs.close();
+				}catch(Exception e)
+				{
+					JOptionPane.showMessageDialog(null,e);
+				}
+			}
+		});
+		btntickets.setFont(new Font("Verdana", Font.BOLD, 16));
+		btntickets.setBounds(260, 293, 160, 49);
+		contentPane.add(btntickets);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(185, 11, 310, 271);
+=====================================================================
+Found a 34 line (176 tokens) duplication in the following files: 
+Starting at line 298 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 281 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+						textFieldTickets.setText(rs.getString("tickets"));
+					}
+				
+					
+					pst.close();
+					}catch(Exception ex)
+					{
+						ex.printStackTrace();
+					}
+	    	}
+	    });
+		comboBoxName.setFont(new Font("Verdana", Font.BOLD, 16));
+		comboBoxName.setBounds(26, 37, 137, 33);
+		contentPane.add(comboBoxName);
+		
+		textFieldSearch = new JTextField();
+		textFieldSearch.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyReleased(KeyEvent arg0) {
+				try{
+					String query="select * from tickets where name=?";
+					PreparedStatement pst=connection.prepareStatement(query);
+					pst.setString(1,textFieldSearch.getText());
+					ResultSet rs=pst.executeQuery();
+					table.setModel(DbUtils.resultSetToTableModel(rs));					
+					pst.close();
+					}catch(Exception ex)
+					{
+						ex.printStackTrace();
+					}
+			}
+		});
+		textFieldSearch.setFont(new Font("Verdana", Font.BOLD, 16));
+		textFieldSearch.setColumns(10);
+=====================================================================
+Found a 34 line (129 tokens) duplication in the following files: 
+Starting at line 62 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 63 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+	public void refreshTable()
+	{
+		try{
+			String query="select * from tickets";
+			PreparedStatement pst=connection.prepareStatement(query);
+			ResultSet rs =pst.executeQuery();
+			table.setModel(DbUtils.resultSetToTableModel(rs));
+			pst.close();
+			rs.close();
+			}catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+	}
+	public void fillComboBox()
+	{
+		try{
+			String query="select * from tickets";
+			PreparedStatement pst=connection.prepareStatement(query);
+			ResultSet rs=pst.executeQuery();
+			
+			while(rs.next())
+			{
+				comboBoxName.addItem(rs.getString("name"));
+			}
+		
+			}catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+	}
+	
+	
+	public adminface() throws SQLException {
+=====================================================================
+Found a 20 line (95 tokens) duplication in the following files: 
+Starting at line 141 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 290 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+
+					PreparedStatement pst=connection.prepareStatement(query);
+					
+					ResultSet rs=pst.executeQuery();
+					while(rs.next())
+					{
+						textFieldId.setText(rs.getString("id"));
+						textFieldName.setText(rs.getString("name"));
+						textFieldCost.setText(rs.getString("cost"));
+						textFieldRow.setText(rs.getString("row"));
+						textFieldTickets.setText(rs.getString("tickets"));
+					}
+				
+					
+					pst.close();
+					}catch(Exception ex)
+					{
+						ex.printStackTrace();
+					}
+			}
+		});
+=====================================================================
+Found a 19 line (95 tokens) duplication in the following files: 
+Starting at line 221 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+Starting at line 273 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+					PreparedStatement pst=connection.prepareStatement(query);
+					
+					ResultSet rs=pst.executeQuery();
+					while(rs.next())
+					{
+						Id.setText(rs.getString("id"));
+						Name.setText(rs.getString("name"));
+						Cost.setText(rs.getString("cost"));
+						Row.setText(rs.getString("row"));
+						Tickets.setText(rs.getString("tickets"));
+					}
+					
+					pst.close();
+					}catch(Exception ex)
+					{
+						ex.printStackTrace();
+					}
+			}
+		});
+=====================================================================
+Found a 12 line (74 tokens) duplication in the following files: 
+Starting at line 282 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 265 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+		contentPane.add(btnDelete);
+		
+	    comboBoxName = new JComboBox<String>();
+	    comboBoxName.addActionListener(new ActionListener() {
+	    	public void actionPerformed(ActionEvent arg0) {
+	    		try{
+					String query="select * from tickets where name=?";
+					PreparedStatement pst=connection.prepareStatement(query);
+					pst.setString(1,(String)comboBoxName.getSelectedItem());
+					ResultSet rs=pst.executeQuery();
+					while(rs.next())
+					{
+=====================================================================
+Found a 8 line (63 tokens) duplication in the following files: 
+Starting at line 138 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 218 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+					int thesh =table.getSelectedRow();
+					String Id_=(table.getModel().getValueAt(thesh, 0).toString());
+					String query="select * from tickets where Id='"+Id_+"'";
+					PreparedStatement pst=connection.prepareStatement(query);
+					
+					ResultSet rs=pst.executeQuery();
+					while(rs.next())
+					{
+=====================================================================
+Found a 11 line (53 tokens) duplication in the following files: 
+Starting at line 62 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 111 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 63 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+Starting at line 112 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+	public void refreshTable()
+	{
+		try{
+			String query="select * from tickets";
+			PreparedStatement pst=connection.prepareStatement(query);
+			ResultSet rs =pst.executeQuery();
+			table.setModel(DbUtils.resultSetToTableModel(rs));
+			pst.close();
+			rs.close();
+			}catch(Exception e)
+			{
+=====================================================================
+Found a 13 line (50 tokens) duplication in the following files: 
+Starting at line 30 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 37 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+public class adminface extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+	private JTable table;
+	private JComboBox<String> comboBoxName;
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+=====================================================================
+Found a 14 line (44 tokens) duplication in the following files: 
+Starting at line 150 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 230 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+						textFieldTickets.setText(rs.getString("tickets"));
+					}
+				
+					
+					pst.close();
+					}catch(Exception ex)
+					{
+						ex.printStackTrace();
+					}
+			}
+		});
+		scrollPane.setViewportView(table);
+		
+		JLabel lblid = new JLabel("Id");
+=====================================================================
+Found a 6 line (41 tokens) duplication in the following files: 
+Starting at line 163 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 242 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+		JLabel lblid = new JLabel("Id");
+		lblid.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblid.setBounds(505, 11, 75, 33);
+		contentPane.add(lblid);
+		
+		JLabel lblname = new JLabel("Name");
+=====================================================================
+Found a 5 line (33 tokens) duplication in the following files: 
+Starting at line 57 of C:\Users\JIMMAKOS\workspace\eishthrio\src\Login.java
+Starting at line 53 of C:\Users\JIMMAKOS\workspace\eishthrio\src\Statistic.java
+Starting at line 103 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 104 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+		setBounds(100, 100, 615, 337);
+	    contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+=====================================================================
+Found a 11 line (32 tokens) duplication in the following files: 
+Starting at line 150 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 281 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+						textFieldTickets.setText(rs.getString("tickets"));
+					}
+				
+					
+					pst.close();
+					}catch(Exception ex)
+					{
+						ex.printStackTrace();
+					}
+			}
+		});
+=====================================================================
+Found a 11 line (32 tokens) duplication in the following files: 
+Starting at line 298 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 230 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+						textFieldTickets.setText(rs.getString("tickets"));
+					}
+				
+					
+					pst.close();
+					}catch(Exception ex)
+					{
+						ex.printStackTrace();
+					}
+	    	}
+	    });
+=====================================================================
+Found a 12 line (31 tokens) duplication in the following files: 
+Starting at line 36 of C:\Users\JIMMAKOS\workspace\eishthrio\src\Login.java
+Starting at line 43 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 50 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+					Login frame = new Login();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+	
+
+	Connection connection=null;
+	private JTextField textFieldUN;
+=====================================================================
+Found a 4 line (28 tokens) duplication in the following files: 
+Starting at line 32 of C:\Users\JIMMAKOS\workspace\eishthrio\src\Login.java
+Starting at line 35 of C:\Users\JIMMAKOS\workspace\eishthrio\src\Statistic.java
+Starting at line 39 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 46 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+=====================================================================
+Found a 6 line (26 tokens) duplication in the following files: 
+Starting at line 62 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 76 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 63 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+Starting at line 77 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+	public void refreshTable()
+	{
+		try{
+			String query="select * from tickets";
+			PreparedStatement pst=connection.prepareStatement(query);
+			ResultSet rs =pst.executeQuery();
+=====================================================================
+Found a 5 line (26 tokens) duplication in the following files: 
+Starting at line 80 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 141 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 81 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+Starting at line 221 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+			PreparedStatement pst=connection.prepareStatement(query);
+			ResultSet rs=pst.executeQuery();
+			
+			while(rs.next())
+			{
+=====================================================================
+Found a 4 line (26 tokens) duplication in the following files: 
+Starting at line 244 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 184 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+					String query="update tickets set id='"+textFieldId.getText()+"',name='"+textFieldName.getText()+"',cost='"+textFieldCost.getText()+"',row='"+textFieldRow.getText()+"',tickets='"+textFieldTickets.getText()+"' where id='"+textFieldId.getText()+"' ";
+					PreparedStatement pst=connection.prepareStatement(query);
+					pst.execute();
+					JOptionPane.showMessageDialog(null,"Data Updated");
+=====================================================================
+Found a 8 line (25 tokens) duplication in the following files: 
+Starting at line 36 of C:\Users\JIMMAKOS\workspace\eishthrio\src\Login.java
+Starting at line 39 of C:\Users\JIMMAKOS\workspace\eishthrio\src\Statistic.java
+Starting at line 43 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 50 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+					Login frame = new Login();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+=====================================================================
+Found a 4 line (25 tokens) duplication in the following files: 
+Starting at line 66 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 114 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 320 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 67 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+Starting at line 115 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+Starting at line 301 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+			PreparedStatement pst=connection.prepareStatement(query);
+			ResultSet rs =pst.executeQuery();
+			table.setModel(DbUtils.resultSetToTableModel(rs));
+			pst.close();
+=====================================================================
+Found a 6 line (25 tokens) duplication in the following files: 
+Starting at line 76 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 111 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 77 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+Starting at line 112 of C:\Users\JIMMAKOS\workspace\eishthrio\src\face.java
+
+	public void fillComboBox()
+	{
+		try{
+			String query="select * from tickets";
+			PreparedStatement pst=connection.prepareStatement(query);
+			ResultSet rs=pst.executeQuery();
+=====================================================================
+Found a 9 line (25 tokens) duplication in the following files: 
+Starting at line 226 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+Starting at line 247 of C:\Users\JIMMAKOS\workspace\eishthrio\src\adminface.java
+
+					JOptionPane.showMessageDialog(null,"Data Saved");
+					pst.close();
+					}catch (Exception e) 
+					{
+						e.printStackTrace();
+					}
+				refreshTable();
+			}
+		});

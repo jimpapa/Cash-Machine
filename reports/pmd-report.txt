@@ -1,0 +1,541 @@
+src/Display.java:2:	Comment is too large: Line too long
+src/Display.java:6:	All classes and interfaces must belong to a named package
+src/Display.java:6:	Each class should declare at least one constructor
+src/Display.java:7:	fieldCommentRequirement Required
+src/Display.java:8:	fieldCommentRequirement Required
+src/Display.java:9:	fieldCommentRequirement Required
+src/Display.java:12:	publicMethodCommentRequirement Required
+src/Display.java:13:	System.out.println is used
+src/Login.java:28:	All classes and interfaces must belong to a named package
+src/Login.java:28:	headerCommentRequirement Required
+src/Login.java:31:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/Login.java:31:	Private field 'contentPane' could be made final; it is only initialized in the declaration or constructor.
+src/Login.java:31:	fieldCommentRequirement Required
+src/Login.java:32:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/Login.java:32:	Perhaps 'textField' could be replaced by a local variable.
+src/Login.java:32:	Private field 'textField' could be made final; it is only initialized in the declaration or constructor.
+src/Login.java:32:	fieldCommentRequirement Required
+src/Login.java:34:	publicMethodCommentRequirement Required
+src/Login.java:36:	Found 'DD'-anomaly for variable 'connection' (lines '36'-'47').
+src/Login.java:39:	Local variable 'driverName' could be declared final
+src/Login.java:44:	Local variable 'url' could be declared final
+src/Login.java:45:	Local variable 'username' could be declared final
+src/Login.java:46:	Local variable 'password' could be declared final
+src/Login.java:48:	Avoid empty catch blocks
+src/Login.java:48:	Avoid empty catch blocks
+src/Login.java:50:	Avoid empty catch blocks
+src/Login.java:50:	Avoid empty catch blocks
+src/Login.java:56:	Parameter 'connection' is not assigned and could be declared final
+src/Login.java:56:	Parameter 'query' is not assigned and could be declared final
+src/Login.java:56:	publicMethodCommentRequirement Required
+src/Login.java:61:	Local variable 'statement' could be declared final
+src/Login.java:62:	Potential violation of Law of Demeter (object not created locally)
+src/Login.java:63:	A method should have only one exit point, and that should be the last statement in the method
+src/Login.java:63:	Potential violation of Law of Demeter (object not created locally)
+src/Login.java:66:	Avoid printStackTrace(); use a logger call instead.
+src/Login.java:73:	Parameter 'connection' is not assigned and could be declared final
+src/Login.java:73:	publicMethodCommentRequirement Required
+src/Login.java:81:	Avoid printStackTrace(); use a logger call instead.
+src/Login.java:86:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/Login.java:86:	Parameter 'args' is not assigned and could be declared final
+src/Login.java:86:	publicMethodCommentRequirement Required
+src/Login.java:87:	To be compliant to J2EE, a webapp should not use any thread.
+src/Login.java:88:	publicMethodCommentRequirement Required
+src/Login.java:90:	Local variable 'frame' could be declared final
+src/Login.java:92:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/Login.java:93:	Avoid printStackTrace(); use a logger call instead.
+src/Login.java:100:	Avoid using redundant field initializer for 'connection'
+src/Login.java:100:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/Login.java:100:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/Login.java:100:	Use explicit scoping instead of the default package private level
+src/Login.java:100:	fieldCommentRequirement Required
+src/Login.java:101:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/Login.java:101:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/Login.java:101:	Private field 'textFieldUN' could be made final; it is only initialized in the declaration or constructor.
+src/Login.java:101:	fieldCommentRequirement Required
+src/Login.java:102:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/Login.java:102:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/Login.java:102:	Private field 'passwordField' could be made final; it is only initialized in the declaration or constructor.
+src/Login.java:102:	fieldCommentRequirement Required
+src/Login.java:103:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/Login.java:103:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/Login.java:103:	Perhaps 'label' could be replaced by a local variable.
+src/Login.java:103:	Private field 'label' could be made final; it is only initialized in the declaration or constructor.
+src/Login.java:103:	fieldCommentRequirement Required
+src/Login.java:105:	It is a good practice to call super() in a constructor
+src/Login.java:105:	publicMethodCommentRequirement Required
+src/Login.java:107:	Overridable method 'connect' called during object construction
+src/Login.java:116:	Local variable 'lblNewLabel' could be declared final
+src/Login.java:120:	Local variable 'lblNewLabel1' could be declared final
+src/Login.java:134:	Local variable 'btnLogin' could be declared final
+src/Login.java:135:	Local variable 'img' could be declared final
+src/Login.java:139:	Parameter 'arg0' is not assigned and could be declared final
+src/Login.java:139:	publicMethodCommentRequirement Required
+src/Login.java:141:	Local variable 'query' could be declared final
+src/Login.java:142:	Local variable 'pst' could be declared final
+src/Login.java:143:	Potential violation of Law of Demeter (object not created locally)
+src/Login.java:144:	Potential violation of Law of Demeter (object not created locally)
+src/Login.java:145:	Avoid variables with short names like rs
+src/Login.java:145:	Ensure that resources like this ResultSet object are closed after use
+src/Login.java:145:	Local variable 'rs' could be declared final
+src/Login.java:145:	Potential violation of Law of Demeter (object not created locally)
+src/Login.java:146:	Found 'DD'-anomaly for variable 'count' (lines '146'-'148').
+src/Login.java:147:	Potential violation of Law of Demeter (object not created locally)
+src/Login.java:150:	Avoid using Literals in Conditional Statements
+src/Login.java:154:	Local variable 'admface' could be declared final
+src/Login.java:157:	Avoid using Literals in Conditional Statements
+src/Login.java:160:	Local variable 'face' could be declared final
+src/Login.java:167:	Potential violation of Law of Demeter (object not created locally)
+src/Login.java:168:	Potential violation of Law of Demeter (object not created locally)
+src/Login.java:170:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/Login.java:185:	Local variable 'img1' could be declared final
+src/Statistic.java:22:	All classes and interfaces must belong to a named package
+src/Statistic.java:22:	headerCommentRequirement Required
+src/Statistic.java:25:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/Statistic.java:25:	Perhaps 'contentPane' could be replaced by a local variable.
+src/Statistic.java:25:	Private field 'contentPane' could be made final; it is only initialized in the declaration or constructor.
+src/Statistic.java:25:	fieldCommentRequirement Required
+src/Statistic.java:26:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/Statistic.java:26:	Private field 'text1' could be made final; it is only initialized in the declaration or constructor.
+src/Statistic.java:26:	fieldCommentRequirement Required
+src/Statistic.java:27:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/Statistic.java:27:	Private field 'text2' could be made final; it is only initialized in the declaration or constructor.
+src/Statistic.java:27:	fieldCommentRequirement Required
+src/Statistic.java:28:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/Statistic.java:28:	Private field 'text3' could be made final; it is only initialized in the declaration or constructor.
+src/Statistic.java:28:	fieldCommentRequirement Required
+src/Statistic.java:29:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/Statistic.java:29:	Private field 'text4' could be made final; it is only initialized in the declaration or constructor.
+src/Statistic.java:29:	fieldCommentRequirement Required
+src/Statistic.java:36:	Local variable 'frame' could be declared final
+src/Statistic.java:38:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/Statistic.java:39:	Avoid printStackTrace(); use a logger call instead.
+src/Statistic.java:45:	It is a good practice to call super() in a constructor
+src/Statistic.java:58:	Local variable 'lblStatistic1' could be declared final
+src/Statistic.java:59:	The String literal "Verdana" appears 9 times in this file; the first occurrence is on line 59
+src/Statistic.java:63:	Local variable 'lblStatistic2' could be declared final
+src/Statistic.java:68:	Local variable 'lblStatistic3' could be declared final
+src/Statistic.java:73:	Local variable 'lblStatistic4' could be declared final
+src/Statistic.java:102:	Local variable 'btnView' could be declared final
+src/Statistic.java:104:	Parameter 'arg0' is not assigned and could be declared final
+src/Statistic.java:104:	publicMethodCommentRequirement Required
+src/Statistic.java:105:	Avoid variables with short names like s1
+src/Statistic.java:105:	Local variable 's1' could be declared final
+src/Statistic.java:106:	Avoid variables with short names like s2
+src/Statistic.java:106:	Local variable 's2' could be declared final
+src/Statistic.java:107:	Avoid variables with short names like s3
+src/Statistic.java:107:	Local variable 's3' could be declared final
+src/Statistic.java:108:	Avoid variables with short names like s4
+src/Statistic.java:108:	Local variable 's4' could be declared final
+src/Statistic.java:110:	Local variable 'dataset' could be declared final
+src/Statistic.java:116:	Local variable 'chart' could be declared final
+src/Statistic.java:117:	Local variable 'catPlot' could be declared final
+src/Statistic.java:118:	Potential violation of Law of Demeter (object not created locally)
+src/Statistic.java:119:	Local variable 'chartPanel' could be declared final
+src/TestClass.java:8:	All classes and interfaces must belong to a named package
+src/TestClass.java:8:	Each class should declare at least one constructor
+src/TestClass.java:8:	headerCommentRequirement Required
+src/TestClass.java:11:	publicMethodCommentRequirement Required
+src/TestClass.java:12:	Local variable 'tester' could be declared final
+src/TestClass.java:17:	JUnit tests should not contain more than 1 assert(s).
+src/TestClass.java:17:	publicMethodCommentRequirement Required
+src/TestClass.java:19:	Local variable 'adm' could be declared final
+src/TestClass.java:20:	Local variable 'cas' could be declared final
+src/TestClass.java:27:	Avoid unused method parameters such as 'executeQuery'.
+src/TestClass.java:27:	Parameter 'executeQuery' is not assigned and could be declared final
+src/TestClass.java:32:	publicMethodCommentRequirement Required
+src/TestClass.java:33:	Local variable 'tester' could be declared final
+src/adminface.java:30:	All classes and interfaces must belong to a named package
+src/adminface.java:30:	Class names should begin with an uppercase character
+src/adminface.java:30:	The class 'adminface' has a Cyclomatic Complexity of 5 (Highest = 19).
+src/adminface.java:30:	The class 'adminface' has a Modified Cyclomatic Complexity of 5 (Highest = 19).
+src/adminface.java:30:	The class 'adminface' has a Standard Cyclomatic Complexity of 5 (Highest = 19).
+src/adminface.java:30:	This class has too many methods, consider refactoring it.
+src/adminface.java:30:	headerCommentRequirement Required
+src/adminface.java:33:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/adminface.java:33:	Perhaps 'contentPane' could be replaced by a local variable.
+src/adminface.java:33:	Private field 'contentPane' could be made final; it is only initialized in the declaration or constructor.
+src/adminface.java:33:	fieldCommentRequirement Required
+src/adminface.java:34:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/adminface.java:34:	Private field 'table' could be made final; it is only initialized in the declaration or constructor.
+src/adminface.java:34:	fieldCommentRequirement Required
+src/adminface.java:35:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/adminface.java:35:	Private field 'comboBoxName' could be made final; it is only initialized in the declaration or constructor.
+src/adminface.java:35:	fieldCommentRequirement Required
+src/adminface.java:41:	Found 'DD'-anomaly for variable 'connection' (lines '41'-'52').
+src/adminface.java:44:	Local variable 'driverName' could be declared final
+src/adminface.java:49:	Local variable 'url' could be declared final
+src/adminface.java:50:	Local variable 'username' could be declared final
+src/adminface.java:51:	Local variable 'password' could be declared final
+src/adminface.java:53:	Avoid empty catch blocks
+src/adminface.java:53:	Avoid empty catch blocks
+src/adminface.java:55:	Avoid empty catch blocks
+src/adminface.java:55:	Avoid empty catch blocks
+src/adminface.java:61:	Parameter 'connection' is not assigned and could be declared final
+src/adminface.java:61:	Parameter 'query' is not assigned and could be declared final
+src/adminface.java:61:	publicMethodCommentRequirement Required
+src/adminface.java:66:	Local variable 'statement' could be declared final
+src/adminface.java:67:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:68:	A method should have only one exit point, and that should be the last statement in the method
+src/adminface.java:68:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:71:	Avoid printStackTrace(); use a logger call instead.
+src/adminface.java:78:	Parameter 'connection' is not assigned and could be declared final
+src/adminface.java:78:	publicMethodCommentRequirement Required
+src/adminface.java:86:	Avoid printStackTrace(); use a logger call instead.
+src/adminface.java:92:	publicMethodCommentRequirement Required
+src/adminface.java:94:	Local variable 'frame' could be declared final
+src/adminface.java:96:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/adminface.java:97:	Avoid printStackTrace(); use a logger call instead.
+src/adminface.java:101:	Avoid using redundant field initializer for 'connection'
+src/adminface.java:101:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/adminface.java:101:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/adminface.java:101:	Use explicit scoping instead of the default package private level
+src/adminface.java:101:	fieldCommentRequirement Required
+src/adminface.java:104:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/adminface.java:104:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/adminface.java:104:	Private field 'textFieldId' could be made final; it is only initialized in the declaration or constructor.
+src/adminface.java:104:	fieldCommentRequirement Required
+src/adminface.java:105:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/adminface.java:105:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/adminface.java:105:	Private field 'textFieldName' could be made final; it is only initialized in the declaration or constructor.
+src/adminface.java:105:	fieldCommentRequirement Required
+src/adminface.java:106:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/adminface.java:106:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/adminface.java:106:	Private field 'textFieldCost' could be made final; it is only initialized in the declaration or constructor.
+src/adminface.java:106:	fieldCommentRequirement Required
+src/adminface.java:107:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/adminface.java:107:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/adminface.java:107:	Private field 'textFieldRow' could be made final; it is only initialized in the declaration or constructor.
+src/adminface.java:107:	fieldCommentRequirement Required
+src/adminface.java:108:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/adminface.java:108:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/adminface.java:108:	Private field 'textFieldSearch' could be made final; it is only initialized in the declaration or constructor.
+src/adminface.java:108:	fieldCommentRequirement Required
+src/adminface.java:109:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/adminface.java:109:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/adminface.java:109:	Private field 'textFieldTickets' could be made final; it is only initialized in the declaration or constructor.
+src/adminface.java:109:	fieldCommentRequirement Required
+src/adminface.java:111:	publicMethodCommentRequirement Required
+src/adminface.java:114:	Local variable 'query' could be declared final
+src/adminface.java:115:	Local variable 'pst' could be declared final
+src/adminface.java:116:	Avoid variables with short names like rs
+src/adminface.java:116:	Ensure that resources like this ResultSet object are closed after use
+src/adminface.java:116:	Local variable 'rs' could be declared final
+src/adminface.java:116:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:118:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:119:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:120:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/adminface.java:122:	Avoid printStackTrace(); use a logger call instead.
+src/adminface.java:125:	publicMethodCommentRequirement Required
+src/adminface.java:128:	Local variable 'query' could be declared final
+src/adminface.java:129:	Local variable 'pst' could be declared final
+src/adminface.java:130:	Avoid variables with short names like rs
+src/adminface.java:130:	Ensure that resources like this ResultSet object are closed after use
+src/adminface.java:130:	Local variable 'rs' could be declared final
+src/adminface.java:130:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:132:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:134:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:137:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/adminface.java:139:	Avoid printStackTrace(); use a logger call instead.
+src/adminface.java:144:	It is a good practice to call super() in a constructor
+src/adminface.java:144:	The constructor 'adminface' has a Cyclomatic Complexity of 19.
+src/adminface.java:144:	The constructor 'adminface' has a Modified Cyclomatic Complexity of 19.
+src/adminface.java:144:	The constructor 'adminface' has a Standard Cyclomatic Complexity of 19.
+src/adminface.java:144:	publicMethodCommentRequirement Required
+src/adminface.java:146:	Overridable method 'connect' called during object construction
+src/adminface.java:155:	Local variable 'btntickets' could be declared final
+src/adminface.java:157:	Parameter 'arg0' is not assigned and could be declared final
+src/adminface.java:157:	publicMethodCommentRequirement Required
+src/adminface.java:159:	Local variable 'query' could be declared final
+src/adminface.java:160:	Local variable 'pst' could be declared final
+src/adminface.java:161:	Avoid variables with short names like rs
+src/adminface.java:161:	Ensure that resources like this ResultSet object are closed after use
+src/adminface.java:161:	Local variable 'rs' could be declared final
+src/adminface.java:161:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:163:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:164:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:165:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/adminface.java:171:	The String literal "Verdana" appears 12 times in this file; the first occurrence is on line 171
+src/adminface.java:175:	Local variable 'scrollPane' could be declared final
+src/adminface.java:182:	Parameter 'arg0' is not assigned and could be declared final
+src/adminface.java:182:	publicMethodCommentRequirement Required
+src/adminface.java:184:	Local variable 'thesh' could be declared final
+src/adminface.java:185:	Local variable 'Id1' could be declared final
+src/adminface.java:185:	Potential violation of Law of Demeter (method chain calls)
+src/adminface.java:185:	Potential violation of Law of Demeter (method chain calls)
+src/adminface.java:185:	This statement may have some unnecessary parentheses
+src/adminface.java:185:	Useless parentheses.
+src/adminface.java:185:	Useless parentheses.
+src/adminface.java:185:	Variables should start with a lowercase character, 'Id1' starts with uppercase character.
+src/adminface.java:186:	Local variable 'query' could be declared final
+src/adminface.java:187:	Local variable 'pst' could be declared final
+src/adminface.java:189:	Avoid variables with short names like rs
+src/adminface.java:189:	Ensure that resources like this ResultSet object are closed after use
+src/adminface.java:189:	Local variable 'rs' could be declared final
+src/adminface.java:189:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:190:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:192:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:193:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:194:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:195:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:196:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:200:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:201:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/adminface.java:203:	Avoid printStackTrace(); use a logger call instead.
+src/adminface.java:209:	Local variable 'lblid' could be declared final
+src/adminface.java:214:	Local variable 'lblname' could be declared final
+src/adminface.java:219:	Local variable 'lblcost' could be declared final
+src/adminface.java:224:	Local variable 'lblrow' could be declared final
+src/adminface.java:229:	Local variable 'lbltickets' could be declared final
+src/adminface.java:260:	Local variable 'btnSave' could be declared final
+src/adminface.java:262:	Parameter 'arg0' is not assigned and could be declared final
+src/adminface.java:262:	publicMethodCommentRequirement Required
+src/adminface.java:264:	Local variable 'query' could be declared final
+src/adminface.java:265:	Local variable 'pst' could be declared final
+src/adminface.java:266:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:267:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:268:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:269:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:270:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:271:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:273:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:274:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/adminface.java:276:	Avoid printStackTrace(); use a logger call instead.
+src/adminface.java:285:	Local variable 'btnUpdate' could be declared final
+src/adminface.java:287:	Parameter 'arg0' is not assigned and could be declared final
+src/adminface.java:287:	publicMethodCommentRequirement Required
+src/adminface.java:290:	Local variable 'query' could be declared final
+src/adminface.java:291:	Local variable 'pst' could be declared final
+src/adminface.java:292:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:294:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:295:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/adminface.java:297:	Avoid printStackTrace(); use a logger call instead.
+src/adminface.java:306:	Local variable 'btnDelete' could be declared final
+src/adminface.java:308:	Parameter 'arg0' is not assigned and could be declared final
+src/adminface.java:308:	publicMethodCommentRequirement Required
+src/adminface.java:309:	Local variable 'action' could be declared final
+src/adminface.java:313:	Local variable 'query' could be declared final
+src/adminface.java:314:	Local variable 'pst' could be declared final
+src/adminface.java:315:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:317:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:318:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/adminface.java:320:	Avoid printStackTrace(); use a logger call instead.
+src/adminface.java:332:	Parameter 'arg0' is not assigned and could be declared final
+src/adminface.java:332:	publicMethodCommentRequirement Required
+src/adminface.java:334:	Local variable 'query' could be declared final
+src/adminface.java:335:	Local variable 'pst' could be declared final
+src/adminface.java:336:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:337:	Avoid variables with short names like rs
+src/adminface.java:337:	Ensure that resources like this ResultSet object are closed after use
+src/adminface.java:337:	Local variable 'rs' could be declared final
+src/adminface.java:337:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:338:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:340:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:341:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:342:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:343:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:344:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:348:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:349:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/adminface.java:351:	Avoid printStackTrace(); use a logger call instead.
+src/adminface.java:362:	Parameter 'arg0' is not assigned and could be declared final
+src/adminface.java:362:	publicMethodCommentRequirement Required
+src/adminface.java:364:	Local variable 'query' could be declared final
+src/adminface.java:365:	Local variable 'pst' could be declared final
+src/adminface.java:366:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:367:	Avoid variables with short names like rs
+src/adminface.java:367:	Ensure that resources like this ResultSet object are closed after use
+src/adminface.java:367:	Local variable 'rs' could be declared final
+src/adminface.java:367:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:369:	Potential violation of Law of Demeter (object not created locally)
+src/adminface.java:370:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/adminface.java:372:	Avoid printStackTrace(); use a logger call instead.
+src/adminface.java:381:	Local variable 'btnStatistic' could be declared final
+src/adminface.java:383:	Parameter 'arg0' is not assigned and could be declared final
+src/adminface.java:383:	publicMethodCommentRequirement Required
+src/adminface.java:384:	Local variable 'stat' could be declared final
+src/adminface.java:392:	Overridable method 'refreshTable' called during object construction
+src/adminface.java:393:	Overridable method 'fillComboBox' called during object construction
+src/face.java:1:	A high number of imports can indicate a high degree of coupling within an object.
+src/face.java:36:	All classes and interfaces must belong to a named package
+src/face.java:36:	Avoid short class names like face
+src/face.java:36:	Class names should begin with an uppercase character
+src/face.java:36:	The class 'face' has a Cyclomatic Complexity of 5 (Highest = 16).
+src/face.java:36:	The class 'face' has a Modified Cyclomatic Complexity of 5 (Highest = 16).
+src/face.java:36:	The class 'face' has a Standard Cyclomatic Complexity of 5 (Highest = 16).
+src/face.java:36:	This class has too many methods, consider refactoring it.
+src/face.java:36:	headerCommentRequirement Required
+src/face.java:39:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/face.java:39:	Perhaps 'contentPane' could be replaced by a local variable.
+src/face.java:39:	Private field 'contentPane' could be made final; it is only initialized in the declaration or constructor.
+src/face.java:39:	fieldCommentRequirement Required
+src/face.java:40:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/face.java:40:	Private field 'table' could be made final; it is only initialized in the declaration or constructor.
+src/face.java:40:	fieldCommentRequirement Required
+src/face.java:41:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/face.java:41:	Private field 'comboBoxName' could be made final; it is only initialized in the declaration or constructor.
+src/face.java:41:	fieldCommentRequirement Required
+src/face.java:48:	Found 'DD'-anomaly for variable 'connection' (lines '48'-'59').
+src/face.java:51:	Local variable 'driverName' could be declared final
+src/face.java:56:	Local variable 'url' could be declared final
+src/face.java:57:	Local variable 'username' could be declared final
+src/face.java:58:	Local variable 'password' could be declared final
+src/face.java:60:	Avoid empty catch blocks
+src/face.java:60:	Avoid empty catch blocks
+src/face.java:62:	Avoid empty catch blocks
+src/face.java:62:	Avoid empty catch blocks
+src/face.java:68:	Parameter 'connection' is not assigned and could be declared final
+src/face.java:68:	Parameter 'query' is not assigned and could be declared final
+src/face.java:68:	publicMethodCommentRequirement Required
+src/face.java:73:	Local variable 'statement' could be declared final
+src/face.java:74:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:75:	A method should have only one exit point, and that should be the last statement in the method
+src/face.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:78:	Avoid printStackTrace(); use a logger call instead.
+src/face.java:85:	Parameter 'connection' is not assigned and could be declared final
+src/face.java:85:	publicMethodCommentRequirement Required
+src/face.java:93:	Avoid printStackTrace(); use a logger call instead.
+src/face.java:98:	publicMethodCommentRequirement Required
+src/face.java:100:	Local variable 'frame' could be declared final
+src/face.java:102:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/face.java:103:	Avoid printStackTrace(); use a logger call instead.
+src/face.java:107:	Avoid using redundant field initializer for 'connection'
+src/face.java:107:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/face.java:107:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/face.java:107:	Use explicit scoping instead of the default package private level
+src/face.java:107:	fieldCommentRequirement Required
+src/face.java:108:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/face.java:108:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/face.java:108:	Private field 'textFieldSearch' could be made final; it is only initialized in the declaration or constructor.
+src/face.java:108:	fieldCommentRequirement Required
+src/face.java:109:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/face.java:109:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/face.java:109:	Perhaps 'lbltickets' could be replaced by a local variable.
+src/face.java:109:	Private field 'lbltickets' could be made final; it is only initialized in the declaration or constructor.
+src/face.java:109:	fieldCommentRequirement Required
+src/face.java:111:	publicMethodCommentRequirement Required
+src/face.java:114:	Local variable 'query' could be declared final
+src/face.java:115:	Local variable 'pst' could be declared final
+src/face.java:116:	Avoid variables with short names like rs
+src/face.java:116:	Ensure that resources like this ResultSet object are closed after use
+src/face.java:116:	Local variable 'rs' could be declared final
+src/face.java:116:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:118:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:119:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:120:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/face.java:122:	Avoid printStackTrace(); use a logger call instead.
+src/face.java:125:	publicMethodCommentRequirement Required
+src/face.java:128:	Local variable 'query' could be declared final
+src/face.java:129:	Local variable 'pst' could be declared final
+src/face.java:130:	Avoid variables with short names like rs
+src/face.java:130:	Ensure that resources like this ResultSet object are closed after use
+src/face.java:130:	Local variable 'rs' could be declared final
+src/face.java:130:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:132:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:134:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:137:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/face.java:139:	Avoid printStackTrace(); use a logger call instead.
+src/face.java:144:	It is a good practice to call super() in a constructor
+src/face.java:144:	The constructor 'face' has a Cyclomatic Complexity of 16.
+src/face.java:144:	The constructor 'face' has a Modified Cyclomatic Complexity of 16.
+src/face.java:144:	The constructor 'face' has a Standard Cyclomatic Complexity of 16.
+src/face.java:144:	publicMethodCommentRequirement Required
+src/face.java:146:	Overridable method 'connect' called during object construction
+src/face.java:155:	Local variable 'btntickets' could be declared final
+src/face.java:157:	Parameter 'arg0' is not assigned and could be declared final
+src/face.java:157:	publicMethodCommentRequirement Required
+src/face.java:159:	Local variable 'query' could be declared final
+src/face.java:160:	Local variable 'pst' could be declared final
+src/face.java:161:	Avoid variables with short names like rs
+src/face.java:161:	Ensure that resources like this ResultSet object are closed after use
+src/face.java:161:	Local variable 'rs' could be declared final
+src/face.java:161:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:163:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:164:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:165:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/face.java:171:	The String literal "Verdana" appears 14 times in this file; the first occurrence is on line 171
+src/face.java:175:	Local variable 'scrollPane' could be declared final
+src/face.java:179:	Avoid variables with short names like Id
+src/face.java:206:	Avoid variables with short names like e
+src/face.java:206:	Parameter 'e' is not assigned and could be declared final
+src/face.java:206:	publicMethodCommentRequirement Required
+src/face.java:207:	Local variable 'document' could be declared final
+src/face.java:211:	Avoid printStackTrace(); use a logger call instead.
+src/face.java:217:	Potential violation of Law of Demeter (method chain calls)
+src/face.java:219:	Potential violation of Law of Demeter (method chain calls)
+src/face.java:221:	Potential violation of Law of Demeter (method chain calls)
+src/face.java:223:	Potential violation of Law of Demeter (method chain calls)
+src/face.java:225:	Avoid printStackTrace(); use a logger call instead.
+src/face.java:229:	Local variable 'query' could be declared final
+src/face.java:230:	Local variable 'pst' could be declared final
+src/face.java:231:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:233:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:234:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/face.java:236:	Avoid printStackTrace(); use a logger call instead.
+src/face.java:239:	Local variable 'query' could be declared final
+src/face.java:240:	Local variable 'pst' could be declared final
+src/face.java:241:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:242:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:243:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/face.java:245:	Avoid printStackTrace(); use a logger call instead.
+src/face.java:260:	Parameter 'arg0' is not assigned and could be declared final
+src/face.java:260:	publicMethodCommentRequirement Required
+src/face.java:263:	Local variable 'thesh' could be declared final
+src/face.java:264:	Local variable 'Id1' could be declared final
+src/face.java:264:	Potential violation of Law of Demeter (method chain calls)
+src/face.java:264:	Potential violation of Law of Demeter (method chain calls)
+src/face.java:264:	This statement may have some unnecessary parentheses
+src/face.java:264:	Useless parentheses.
+src/face.java:264:	Useless parentheses.
+src/face.java:264:	Variables should start with a lowercase character, 'Id1' starts with uppercase character.
+src/face.java:265:	Local variable 'query' could be declared final
+src/face.java:266:	Local variable 'pst' could be declared final
+src/face.java:268:	Avoid variables with short names like rs
+src/face.java:268:	Ensure that resources like this ResultSet object are closed after use
+src/face.java:268:	Local variable 'rs' could be declared final
+src/face.java:268:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:269:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:271:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:272:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:273:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:274:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:275:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:278:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:279:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/face.java:281:	Avoid printStackTrace(); use a logger call instead.
+src/face.java:287:	Local variable 'lblid' could be declared final
+src/face.java:292:	Local variable 'lblname' could be declared final
+src/face.java:297:	Local variable 'lblcost' could be declared final
+src/face.java:302:	Local variable 'lblrow' could be declared final
+src/face.java:314:	Parameter 'arg0' is not assigned and could be declared final
+src/face.java:314:	publicMethodCommentRequirement Required
+src/face.java:316:	Local variable 'query' could be declared final
+src/face.java:317:	Local variable 'pst' could be declared final
+src/face.java:318:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:319:	Avoid variables with short names like rs
+src/face.java:319:	Ensure that resources like this ResultSet object are closed after use
+src/face.java:319:	Local variable 'rs' could be declared final
+src/face.java:319:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:320:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:322:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:323:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:324:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:325:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:326:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:328:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:329:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/face.java:331:	Avoid printStackTrace(); use a logger call instead.
+src/face.java:342:	Parameter 'arg0' is not assigned and could be declared final
+src/face.java:342:	publicMethodCommentRequirement Required
+src/face.java:344:	Local variable 'query' could be declared final
+src/face.java:345:	Local variable 'pst' could be declared final
+src/face.java:346:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:347:	Avoid variables with short names like rs
+src/face.java:347:	Ensure that resources like this ResultSet object are closed after use
+src/face.java:347:	Local variable 'rs' could be declared final
+src/face.java:347:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:349:	Potential violation of Law of Demeter (object not created locally)
+src/face.java:350:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/face.java:352:	Avoid printStackTrace(); use a logger call instead.
+src/face.java:361:	Overridable method 'refreshTable' called during object construction
+src/face.java:362:	Overridable method 'fillComboBox' called during object construction
