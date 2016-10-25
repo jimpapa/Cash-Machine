@@ -1,3 +1,3 @@
-# mhxlog
+# Cash-Machine
 
-Cash register - ticket printer
+Cash register - ticket printer - CMS(only admin) - Statistics Graphics Interface  
